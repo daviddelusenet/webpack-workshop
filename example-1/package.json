@@ -2,7 +2,7 @@
   "name": "example-1",
   "version": "1.0.0",
   "description": "Webpack example 1",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "build:dev": "BABEL_ENV=dev node_modules/.bin/webpack --env=dev",
     "build:prod": "BABEL_ENV=prod node_modules/.bin/webpack --env=prod"
