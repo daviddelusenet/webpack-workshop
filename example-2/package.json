@@ -1,7 +1,7 @@
 {
-  "name": "example-1",
+  "name": "example-2",
   "version": "1.0.0",
-  "description": "Webpack example 1",
+  "description": "Webpack example 2",
   "main": "App.js",
   "scripts": {
     "build:dev": "node_modules/.bin/webpack-dev-server"
