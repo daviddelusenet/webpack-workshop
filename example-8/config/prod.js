@@ -59,7 +59,8 @@ module.exports = function(env) {
         compress: {
           screw_ie8: true
         },
-        comments: false
+        comments: false,
+        sourceMap: true
       })
     ]
   });
