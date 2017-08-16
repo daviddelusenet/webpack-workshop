@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 
-module.exports = function(env) {
+module.exports = function() {
   return {
     context: resolve(__dirname, './src'), // The context is an absolute string to the directory that contains the entry files.
     entry: { // The entry object is where webpack looks to start building the bundle
