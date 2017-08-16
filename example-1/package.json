@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/daviddelusenet/webpack-examples#readme",
   "devDependencies": {
-    "webpack": "^3.5.4",
-    "webpack-merge": "^4.1.0"
+    "webpack": "^3.5.4"
   }
 }
