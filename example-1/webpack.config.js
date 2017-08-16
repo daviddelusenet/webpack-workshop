@@ -11,7 +11,7 @@ module.exports = function(env) {
     output: {
       path: resolve(__dirname, './dist/js'),
       filename: '[name].min.js',
-      publicPath: '/js'
+      publicPath: '/js/'
     }
   }
 };
