@@ -1,2 +1,3 @@
-# webpack-examples
-Webpack examples
+# Webpack workshop
+
+This repository contains Webpack examples used for a Webpack workshop.
