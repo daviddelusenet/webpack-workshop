@@ -1,0 +1,9 @@
+.Bar {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    @include breakpoint(medium up) {
+        background-color: yellow;
+    }
+}
