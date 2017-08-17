@@ -1,0 +1,14 @@
+@import '~foundation-sites/scss/foundation';
+@import 'Settings';
+@import 'Bar';
+@import 'Foo';
+
+body {
+    display: flex;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p {
+    font-size: rem-calc(100px);
+    color: $light-gray;
+}
