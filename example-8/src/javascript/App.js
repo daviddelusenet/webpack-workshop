@@ -1,6 +1,5 @@
 // Import the styling
 import './../scss/App.scss';
-import './../scss/Foo.scss';
 
 // Import the ComponentLoader
 import ComponentLoader      from 'component-loader-js';

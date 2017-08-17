@@ -1,5 +1,4 @@
 import './../scss/App.scss';
-import './../scss/Foo.scss';
 
 const foo = 'we did it boys!';
 
