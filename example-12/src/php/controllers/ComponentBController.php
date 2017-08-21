@@ -16,14 +16,14 @@ use Silex\Application;
  *
  *
  */
-class HomeController
+class ComponentBController
 {
     /**
      * View page "Home"
      * @param Application $app
      * @return mixed
      */
-    public function viewHome(Application $app)
+    public function viewComponentB(Application $app)
     {
         return $app['twig']->render('pages/home.twig');
     }

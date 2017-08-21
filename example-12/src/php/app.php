@@ -10,8 +10,10 @@ use Mimoto\Mimoto;
 
 // Configure Mimoto
 Mimoto::setValue('config', include(dirname(__FILE__).'/config.php'));
-Mimoto::setValue('ProjectConfig.root',__DIR__ . '/../');
-Mimoto::setValue('ProjectConfig.twigroot', 'src/userinterface/templates/');
+Mimoto::setValue('ProjectConfig.root',__DIR__ . '/../../');
+Mimoto::setValue('ProjectConfig.twigroot', 'src/php/templates/');
+
+//echo Mimoto::value('config')->general->web_root; die;
 
 // Init app
 $app = new Silex\Application();
