@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Momkai\\UserInterface\\": "./src/userinterface"
+      "Boilerplate\\Controllers\\": "./src/php/controllers"
     }
   }
 }
