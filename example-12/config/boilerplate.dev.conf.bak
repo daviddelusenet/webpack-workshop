@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+
+    ServerName boilerplate.dev
+    DocumentRoot "/your/path/here/webpack-workshop/example-12/dist"
+
+    SetEnv APP_ENV "dev"
+    SetEnv APP_NAME "boilerplate"
+
+    <Directory "/your/path/here/webpack-workshop/example-12/dist">
+        Options FollowSymLinks
+        Require all granted
+        AllowOverride all
+    </Directory>
+
+    ErrorLog /your/path/here/error.log
+    CustomLog /your/path/here/access.log combined
+
+</VirtualHost>
