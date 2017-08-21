@@ -1,0 +1,52 @@
+// Sass variable prefixes:
+// c = color
+// ff = font-family
+// fs = font-size
+// lh = line-height
+// z = z-index
+// h = height
+
+// Colors (named with http://chir.ag/projects/name-that-color/#6195ED)
+$c-white:                                           #fff;
+$c-black:                                           #000;
+$c-alto:                                            #dedede;
+$c-gray:                                            #8c8c8c;
+$c-tradewind:                                       #55aba8;
+$c-gallery:                                         #eee;
+
+// Font families
+$ff-minion:                                         "minion-pro", serif;
+$ff-georgia:                                        Georgia, Times, "Times New Roman", serif;
+
+// Z-index
+$z-text-block-paragraph:                            1;
+$z-text-block-paragraph-bottom:                     2;
+$z-logo-container:                                  2;
+$z-text-block-paragraph-underline-element:          -1;
+$z-text-block-paragraph-underline-element-bottom:   -2;
+$z-text-block-link-underline-element:               $z-text-block-paragraph-underline-element;
+$z-text-block-link-underline-element-bottom:        $z-text-block-paragraph-underline-element-bottom;
+$z-turn-device:                                     99999;
+
+// Height breakpoint variables
+$minh-200:                      'screen and (min-height: 200px)';
+$minh-300:                      'screen and (min-height: 300px)';
+$minh-400:                      'screen and (min-height: 400px)';
+$minh-500:                      'screen and (min-height: 500px)';
+$minh-600:                      'screen and (min-height: 600px)';
+$minh-700:                      'screen and (min-height: 700px)';
+
+// Use the height breakpoints like this:
+@include breakpoint(mediumsmall up) {
+  @media #{$minh-200} {}
+
+  @media #{$minh-300} {}
+
+  @media #{$minh-400} {}
+
+  @media #{$minh-500} {}
+
+  @media #{$minh-600} {}
+
+  @media #{$minh-700} {}
+}

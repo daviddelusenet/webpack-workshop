@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["es2015",
+      {
+        "modules": false // Setting this to false will not transform modules.
+      }
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+// This mixin is based on https://eager.io/blog/smarter-link-underlines/
+
+@mixin text-shadow-to-crop-underline($background-color: $c-black, $vertical-extend: false) {
+  @if $vertical-extend {
+    text-shadow: 0 .03em $background-color, 0 -.03em $background-color, 0 .06em $background-color, 0 -.06em $background-color, 0 .09em $background-color, 0 -.09em $background-color, 0 .12em $background-color, 0 -.12em $background-color;
+  } @else {
+    text-shadow: 0 .03em $background-color, 0 -.03em $background-color, .03em 0 $background-color, -.03em 0 $background-color, .06em 0 $background-color, -.06em 0 $background-color, .09em 0 $background-color, -.09em 0 $background-color, .12em 0 $background-color, -.12em 0 $background-color, .15em 0 $background-color, -.15em 0 $background-color, .18em 0 $background-color, -.18em 0 $background-color;
+  }
+}
+
+@mixin underline($background-color: $c-black, $color: $c-white, $animate: false) {
+  @include text-shadow-to-crop-underline($background-color);
+  text-decoration: none;
+  background-image: linear-gradient($background-color, $background-color), linear-gradient($background-color, $background-color), linear-gradient($color, $color);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 90%, 100% 90%, 0 88%;
+
+  @if $animate {
+    background-size: .05em 1px, .05em 1px, 0 1px;
+    transition: color .7s cubic-bezier(.215, .610, .355, 1), background .7s cubic-bezier(.215, .610, .355, 1);
+
+    &.underline--active {
+      color: $color;
+      background-size: .05em 1px, .05em 1px, 100% 1px;
+    }
+  } @else {
+    background-size: .05em 1px, .05em 1px, 100% 1px;
+  }
+}
