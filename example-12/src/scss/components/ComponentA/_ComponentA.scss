@@ -1,3 +1,14 @@
 .ComponentA {
-  background-color: red;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: $c-alto;
 }
+
+  .ComponentA__title {
+    font-size: rem-calc(20px);
+  }
+
+  .ComponentA__paragraph {
+    font-size: rem-calc(16px);
+  }

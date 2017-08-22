@@ -11,7 +11,15 @@ module.exports = function(env) {
       contentBase: resolve(__dirname, './../dist'), // The folder from where the files get served
       compress: true, // Enable gzip compression for everything served
       port: 3100,
-      hot: true
+      hot: true,
+      proxy: {
+        '*': {
+          target: 'http://boilerplate.dev',
+          secure: false,
+          changeOrigin: true
+        }
+      },
+      historyApiFallback: true
     },
     module: {
       rules: [
