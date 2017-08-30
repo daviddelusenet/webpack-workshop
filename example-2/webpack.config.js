@@ -10,7 +10,8 @@ module.exports = function() {
     devtool: 'cheap-module-source-map', // https://webpack.js.org/configuration/devtool/
     devServer: {
       contentBase: resolve(__dirname, './dist'), // The folder from where the files get served
-      compress: true // Enable gzip compression for everything served
+      compress: true, // Enable gzip compression for everything served
+      open: true // open in browser
     },
     output: {
       path: resolve(__dirname, './dist/js'),
